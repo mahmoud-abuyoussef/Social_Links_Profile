@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+}
+.container {
+  padding: 0 15px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.social-media {
+  width: 385px;
+  padding: 40px 27px 20px 27px;
+  background-color: var(--grey-800);
+  border-radius: 10px;
+}
+.social-media .user-image img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin: auto;
+  border-radius: 50%;
+}
+.social-media .user-info {
+  text-align: center;
+}
+.social-media .user-info .username {
+  margin-top: 25px;
+  color: var(--white);
+}
+.social-media .user-info .address {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--green);
+}
+.social-media .user-info .jop-title {
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--white);
+}
+.social-media .social-links ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.social-media .social-links ul li {
+  height: 46px;
+  line-height: 46px;
+  margin-bottom: 18px;
+  text-align: center;
+  background-color: var(--grey-700);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.social-media .social-links ul li:hover {
+  background-color: var(--green);
+}
+.social-media .social-links ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 15px;
+}
+.social-media .social-links ul li:hover a {
+  color: var(--grey-900);
+}
